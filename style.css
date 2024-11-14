@@ -1,0 +1,127 @@
+/* Apply a black background to the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Set text color to white for readability */
+}
+
+/* Main image container styling */
+.image-container {
+    position: relative; /* Allows positioning of nav on top of image */
+    text-align: center;
+}
+
+/* Main header image styling */
+.header-image {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Floating navigation positioned just below the coin */
+.floating-nav {
+    position: absolute;
+    top: 75%; /* Adjust this value to position the nav below the coin */
+    left: 50%;
+    transform: translateX(-50%); /* Center-align the nav horizontally */
+}
+
+.floating-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 10px; /* Space between items */
+}
+
+/* Individual link image styles */
+.link1 {
+    width: 250px; /* Adjust size for link 1 */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.link2 {
+    width: 594px; /* Adjust size for link 2 */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* Triangle separator styling */
+.separator-image {
+    width: 20px; /* Adjust size of triangle */
+    height: auto;
+}
+
+/* Hover effects */
+.link1:hover, .link2:hover {
+    transform: scale(1.1); /* Slight hover effect */
+}
+
+/* Section styling with background images */
+#section1, #section2 {
+    background-size: cover;       /* Ensures the background image covers the section */
+    background-position: center;  /* Center-aligns the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: #fff;
+    padding: 100px 20px;
+    min-height: 100vh;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Serif font styling for paragraph text */
+#section1 p, #section2 p {
+    max-width: 1000px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif; /* Switch to a serif font */
+}
+
+/* Serif font styling for paragraph text */
+#section1 h3, #section2 h3 {
+    text-align: left;
+    max-width: 1000px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif; /* Switch to a serif font */
+}
+
+
+
+#section1 {
+    background-image: url('path-to-background1-image.jpg'); /* Background for Section 1 */
+}
+
+#section2 {
+    background-image: url('path-to-background2-image.jpg'); /* Background for Section 2 */
+}
+
+/* Styling for section title images */
+.section-title {
+    max-width: 1000px; /* Limits the width of the title image */
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling for readability */
+#section1 p, #section2 p {
+    max-width: 1000px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
